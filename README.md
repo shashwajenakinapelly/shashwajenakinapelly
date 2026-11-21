@@ -1,16 +1,6 @@
 <div align="center">
 
-<br>
-
-# S H A S H W A J E N &nbsp; A K I N A P E L L Y
-
-**FOUNDER & CHAIRMAN — DESKSPACE TECHNOLOGIES PVT. LTD.**
-
-<br>
-
-<a href="[https://github.com/shashwajenakinapelly](https://github.com/shashwajenakinapelly)">
-  <img src="[https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=2600&pause=900&color=FAFAFA&background=09090B&center=true&vCenter=true&width=860&height=44&lines=DESKSPACE+TECHNOLOGIES+PVT.+LTD.+%E2%80%A2+OFFICE+OF+THE+CHAIRMAN;AI+INFRASTRUCTURE+%E2%80%A2+AUTONOMOUS+SYSTEMS+%E2%80%A2+ENTERPRISE+SOFTWARE;8-YEAR+ENGINEERING+LINEAGE+%E2%80%A2+HYDERABAD%2C+INDIA](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=2600&pause=900&color=FAFAFA&background=09090B&center=true&vCenter=true&width=860&height=44&lines=DESKSPACE+TECHNOLOGIES+PVT.+LTD.+%E2%80%A2+OFFICE+OF+THE+CHAIRMAN;AI+INFRASTRUCTURE+%E2%80%A2+AUTONOMOUS+SYSTEMS+%E2%80%A2+ENTERPRISE+SOFTWARE;8-YEAR+ENGINEERING+LINEAGE+%E2%80%A2+HYDERABAD%2C+INDIA)" alt="Executive Status" />
-</a>
+<img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Founder & Chairman" />
 
 <br><br>
 
@@ -42,12 +32,10 @@
 
 <br>
 
-<!-- Verified Contribution Streak Card -->
 <img src="https://streak-stats.demolab.com?user=coderwrexx&theme=dark&hide_border=true&background=09090B&stroke=27272A&ring=FAFAFA&fire=FAFAFA&currStreakLabel=FAFAFA&sideLabels=A1A1AA&dates=71717A" width="76%" alt="Contribution Streak" />
 
 <br><br>
 
-<!-- Symmetrical 6-Badge Language Distribution -->
 ![Shell](https://img.shields.io/badge/Shell_%26_Systems-36.2%25-09090b?style=for-the-badge&logo=gnubash&logoColor=fafafa&labelColor=18181b)
 ![Python](https://img.shields.io/badge/Python_%26_AI-26.4%25-09090b?style=for-the-badge&logo=python&logoColor=fafafa&labelColor=18181b)
 ![TypeScript](https://img.shields.io/badge/TypeScript_%26_React-18.9%25-09090b?style=for-the-badge&logo=typescript&logoColor=fafafa&labelColor=18181b)
@@ -72,6 +60,16 @@
 | **2026** | **LiquidGlass Lock UI** | Mobile OS / UI | Developed custom Android lock-screen compositor engine in `Kotlin` and `Jetpack Compose`. |
 | **2018–2025** | **Systems & Web R&D** | Infrastructure | 8-year engineering foundation across Linux kernel environments, Android internals, and full-stack web. |
 
+<details>
+<summary><b>▸ Inspect Deep Architecture Blueprints (Interactive Specification)</b></summary>
+<br>
+
+* **OmniDoc AI Pipeline:** Ingests multi-page PDFs and scanned records, generates dense vector embeddings in PostgreSQL (`pgvector`), and executes multi-step reasoning via Gemini API on serverless Google Cloud Run instances.
+* **Zero-Cloud Inference Stack:** Runs quantized GGUF models locally using `llama.cpp` with Vulkan GPU acceleration, exposing OpenAI-compatible endpoints to autonomous agent frameworks (`Goose`, `Open Interpreter`).
+* **Mobile Compositor & OS Layer:** Implements custom shader-driven UI depth layers in Jetpack Compose alongside root-level ADB/Fastboot telemetry tooling.
+
+</details>
+
 ---
 
 ### IV. Distinctions, Credentials & Recognitions
@@ -89,13 +87,18 @@
 
 <div align="center">
 
-<br>
-
-<img src="[https://skillicons.dev/icons?i=linux,python,ts,react,nextjs,kotlin,cpp,bash,docker,gcp,postgres,git&theme=dark](https://skillicons.dev/icons?i=linux,python,ts,react,nextjs,kotlin,cpp,bash,docker,gcp,postgres,git&theme=dark)" alt="Technology Stack" />
-
-<br><br>
+![Linux](https://img.shields.io/badge/Ubuntu_Linux-09090b?style=for-the-badge&logo=ubuntu&logoColor=fafafa)
+![Python](https://img.shields.io/badge/Python-09090b?style=for-the-badge&logo=python&logoColor=fafafa)
+![TypeScript](https://img.shields.io/badge/TypeScript-09090b?style=for-the-badge&logo=typescript&logoColor=fafafa)
+![React](https://img.shields.io/badge/React_%26_Next.js-09090b?style=for-the-badge&logo=react&logoColor=fafafa)
+![Kotlin](https://img.shields.io/badge/Kotlin_%26_Compose-09090b?style=for-the-badge&logo=kotlin&logoColor=fafafa)
+![CPP](https://img.shields.io/badge/C%2B%2B_%26_Vulkan-09090b?style=for-the-badge&logo=cplusplus&logoColor=fafafa)
+![Docker](https://img.shields.io/badge/Docker_%26_Cloud_Run-09090b?style=for-the-badge&logo=docker&logoColor=fafafa)
+![Postgres](https://img.shields.io/badge/PostgreSQL_%26_pgvector-09090b?style=for-the-badge&logo=postgresql&logoColor=fafafa)
 
 </div>
+
+<br>
 
 | Architectural Layer | Capabilities & Production Tooling |
 | :--- | :--- |
@@ -107,8 +110,6 @@
 ---
 
 <div align="center">
-
-<br>
 
 **DESKSPACE TECHNOLOGIES PVT. LTD.** &nbsp;•&nbsp; HYDERABAD, INDIA
 
