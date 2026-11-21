@@ -5,10 +5,10 @@
 <br>
 
 <sub>
-  <a href="#i-executive-mandate"><b>01. EXECUTIVE MANDATE</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#ii-live-telemetry"><b>02. LIVE TELEMETRY</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#iii-ventures--track-record"><b>03. VENTURES &amp; TRACK RECORD</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#iv-distinctions"><b>04. DISTINCTIONS</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#i-executive-mandate"><b>01. EXECUTIVE MANDATE</b></a> &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
+  <a href="#ii-live-telemetry"><b>02. LIVE TELEMETRY</b></a> &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
+  <a href="#iii-ventures--track-record"><b>03. VENTURES &amp; TRACK RECORD</b></a> &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
+  <a href="#iv-distinctions"><b>04. DISTINCTIONS</b></a> &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
   <a href="#v-architecture"><b>05. ARCHITECTURE</b></a>
 </sub>
 
@@ -20,7 +20,7 @@
 
 <a name="i-executive-mandate"></a>
 <div align="center">
-  <sub><b>I. OFFICE OF THE CHAIRMAN — EXECUTIVE MANDATE</b></sub>
+  <sub><b>I. OFFICE OF THE CHAIRMAN &#8212; EXECUTIVE MANDATE</b></sub>
   <br><br>
   <img src="./mandate.svg" width="100%" alt="Executive Mandate" />
 </div>
@@ -37,7 +37,7 @@
   <br><br>
   <img src="./telemetry.svg" width="100%" alt="Live Systems & Language Telemetry" />
   <br><br>
-  <img src="https://raw.githubusercontent.com/shashwajenakinapelly/shashwajenakinapelly/output/framed-snake.svg" width="100%" alt="Framed Contribution Grid" />
+  <img src="./framed-snake.svg" width="100%" alt="52-Week Contribution Matrix" />
 </div>
 
 <br>
@@ -62,10 +62,10 @@
 | **2026** | **[MedicalPlain](https://medicalplain.vercel.app)** | HealthTech | Architected and deployed clinical document translation & simplification platform on edge infrastructure. |
 | **2026** | **Local Multi-Agent Runtime** | AI Infrastructure | Engineered zero-cloud multi-agent orchestration via `llama.cpp` (Vulkan), `Ollama`, and `Goose`. |
 | **2026** | **LiquidGlass Lock UI** | Mobile OS / UI | Developed custom Android lock-screen compositor engine in `Kotlin` and `Jetpack Compose`. |
-| **2018–2025** | **Systems & Web R&D** | Infrastructure | 8-year engineering foundation across Linux kernel environments, Android internals, and full-stack web. |
+| **2018&#8211;2025** | **Systems & Web R&D** | Infrastructure | 8-year engineering foundation across Linux kernel environments, Android internals, and full-stack web. |
 
 <details>
-<summary><b>▸ Inspect Deep Architecture Blueprints (Interactive Technical Specification)</b></summary>
+<summary><b>&#9656; Inspect Deep Architecture Blueprints (Interactive Technical Specification)</b></summary>
 <br>
 
 * **OmniDoc AI Pipeline:** Ingests multi-page PDFs and scanned records, generates dense vector embeddings in PostgreSQL (`pgvector`), and executes multi-step reasoning via Gemini API on serverless Google Cloud Run instances.
