@@ -1,66 +1,85 @@
-<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="290" viewBox="0 0 900 290" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050507"/>
-      <stop offset="50%" stop-color="#0d0d12"/>
-      <stop offset="100%" stop-color="#050507"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&amp;family=Plus+Jakarta+Sans:wght@600;800&amp;display=swap');
+      .title { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 800; letter-spacing: 7px; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; }
+      @keyframes pulseRing { 0% { r: 5; opacity: 0.9; } 100% { r: 16; opacity: 0; } }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes scanBeam { 0% { transform: translateX(-320px); } 100% { transform: translateX(920px); } }
+      @keyframes fadeSlide { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0); } }
+      .ring { animation: pulseRing 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+      .cursor { animation: blink 1s step-end infinite; }
+      .beam { animation: scanBeam 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .hero-enter { animation: fadeSlide 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    </style>
+
+    <linearGradient id="obsidianBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040406"/>
+      <stop offset="50%" stop-color="#0b0b10"/>
+      <stop offset="100%" stop-color="#040406"/>
     </linearGradient>
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#27272a"/>
-      <stop offset="50%" stop-color="#a1a1aa"/>
-      <stop offset="100%" stop-color="#27272a"/>
+    <linearGradient id="goldPlatinumBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#52525b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.55"/>
     </linearGradient>
-    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    <linearGradient id="glassSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
     </linearGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+    <linearGradient id="laserSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fafafa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="microGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.025" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
-  <rect width="900" height="260" rx="16" fill="url(#grid)"/>
-  <rect x="1" y="1" width="898" height="258" rx="15" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <!-- Deep Obsidian Base & Architectural Micro-Grid -->
+  <rect width="900" height="290" rx="18" fill="url(#obsidianBg)"/>
+  <rect width="900" height="290" rx="18" fill="url(#microGrid)"/>
+
+  <!-- Ambient Subtle Corner Glows -->
+  <circle cx="110" cy="60" r="140" fill="#eab308" fill-opacity="0.05"/>
+  <circle cx="790" cy="230" r="150" fill="#10b981" fill-opacity="0.05"/>
+
+  <!-- Outer Precision Frame -->
+  <rect x="1" y="1" width="898" height="288" rx="17" stroke="url(#goldPlatinumBorder)" stroke-width="1.5"/>
 
   <!-- Top Telemetry Header -->
-  <circle cx="36" cy="36" r="4.5" fill="#10b981">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="36" cy="36" r="10" stroke="#10b981" stroke-width="1" fill="none">
-    <animate attributeName="r" values="4.5;14" dur="1.8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <text x="56" y="40" fill="#a1a1aa" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="2">DESKSPACE TECHNOLOGIES PVT. LTD. // EXECUTIVE COMMAND</text>
-  <text x="864" y="40" text-anchor="end" fill="#71717a" font-family="monospace" font-size="11">NODE: 2018–2026 • HYDERABAD, IN</text>
-  <line x1="28" y1="58" x2="872" y2="58" stroke="#27272a" stroke-width="1"/>
+  <circle cx="38" cy="38" r="5" fill="#10b981"/>
+  <circle cx="38" cy="38" r="5" stroke="#10b981" stroke-width="1.2" fill="none" class="ring"/>
+  <text x="58" y="42" fill="#d4d4d8" class="mono" font-size="11" font-weight="600" letter-spacing="2">DESKSPACE TECHNOLOGIES PVT. LTD. // OFFICE OF THE CHAIRMAN</text>
+  <text x="862" y="42" text-anchor="end" fill="#71717a" class="mono" font-size="11" letter-spacing="1">EST. 2018 • HYDERABAD, IN</text>
+  <line x1="28" y1="60" x2="872" y2="60" stroke="#27272a" stroke-width="1"/>
 
-  <!-- Executive Identity -->
-  <text x="450" y="112" text-anchor="middle" fill="#fafafa" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" letter-spacing="7">SHASHWAJEN AKINAPELLY</text>
-  <text x="450" y="142" text-anchor="middle" fill="#a1a1aa" font-family="monospace" font-size="13" letter-spacing="3">FOUNDER &amp; CHAIRMAN  •  PRINCIPAL AI &amp; SYSTEMS ARCHITECT</text>
+  <!-- Hero Title & Executive Title -->
+  <g class="hero-enter">
+    <text x="450" y="118" text-anchor="middle" fill="#fafafa" class="title" font-size="36">SHASHWAJEN AKINAPELLY</text>
+    <text x="450" y="148" text-anchor="middle" fill="#eab308" class="mono" font-size="12.5" font-weight="600" letter-spacing="3.5">FOUNDER &amp; CHAIRMAN  •  PRINCIPAL AI &amp; SYSTEMS ARCHITECT</text>
+  </g>
 
-  <!-- 3 Live Hardware/System Pills -->
-  <rect x="80" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
-  <text x="195" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">AI INFRASTRUCTURE</text>
+  <!-- 3 Glassmorphic Executive Pillars -->
+  <rect x="54" y="172" width="248" height="44" rx="8" fill="url(#glassSurface)" stroke="#27272a"/>
+  <text x="178" y="191" text-anchor="middle" fill="#fafafa" class="mono" font-size="11" font-weight="600" letter-spacing="1">APPLIED AI INFRASTRUCTURE</text>
+  <text x="178" y="206" text-anchor="middle" fill="#71717a" class="mono" font-size="9.5">MULTIMODAL AGENTS &amp; RAG</text>
 
-  <rect x="335" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
-  <text x="450" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">AUTONOMOUS AGENTS</text>
+  <rect x="326" y="172" width="248" height="44" rx="8" fill="url(#glassSurface)" stroke="#27272a"/>
+  <text x="450" y="191" text-anchor="middle" fill="#fafafa" class="mono" font-size="11" font-weight="600" letter-spacing="1">ZERO-CLOUD LLM RUNTIMES</text>
+  <text x="450" y="206" text-anchor="middle" fill="#71717a" class="mono" font-size="9.5">VULKAN • LLAMA.CPP • OLLAMA</text>
 
-  <rect x="590" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
-  <text x="705" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">SYSTEMS ARCHITECTURE</text>
+  <rect x="598" y="172" width="248" height="44" rx="8" fill="url(#glassSurface)" stroke="#27272a"/>
+  <text x="722" y="191" text-anchor="middle" fill="#fafafa" class="mono" font-size="11" font-weight="600" letter-spacing="1">ENTERPRISE &amp; OS SYSTEMS</text>
+  <text x="722" y="206" text-anchor="middle" fill="#71717a" class="mono" font-size="9.5">LINUX KERNEL • KOTLIN • CLOUD</text>
 
-  <!-- Bottom Active Console Line -->
-  <text x="442" y="232" text-anchor="middle" fill="#71717a" font-family="monospace" font-size="11" letter-spacing="1.5">STATUS: OPERATIONAL  |  CLEARANCE: CHAIRMAN  |  UPTIME: 99.99%</text>
-  <rect x="692" y="221" width="6" height="13" fill="#10b981">
-    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
-  </rect>
+  <!-- Bottom Live Command Console -->
+  <rect x="130" y="234" width="640" height="32" rx="6" fill="#09090b" stroke="#27272a"/>
+  <text x="442" y="254" text-anchor="middle" fill="#a1a1aa" class="mono" font-size="11" letter-spacing="1.2">&gt; SYSTEM STATUS: OPERATIONAL  |  STREAK: 326 DAYS  |  COMMITS: 1,866+</text>
+  <rect x="712" y="243" width="6.5" height="13" fill="#10b981" class="cursor"/>
 
-  <!-- Top & Bottom Laser Sweeps -->
-  <rect x="-300" y="0" width="300" height="2" fill="url(#beam)">
-    <animate attributeName="x" from="-300" to="900" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="900" y="258" width="300" height="2" fill="url(#beam)">
-    <animate attributeName="x" from="900" to="-300" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
+  <!-- Top Laser Sweep -->
+  <rect x="0" y="0" width="320" height="2" fill="url(#laserSweep)" class="beam"/>
 </svg>
