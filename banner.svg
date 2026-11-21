@@ -1,43 +1,66 @@
-<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#09090b"/>
-      <stop offset="50%" stop-color="#121216"/>
-      <stop offset="100%" stop-color="#09090b"/>
+      <stop offset="0%" stop-color="#050507"/>
+      <stop offset="50%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#050507"/>
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#27272a"/>
-      <stop offset="50%" stop-color="#71717a"/>
+      <stop offset="50%" stop-color="#a1a1aa"/>
       <stop offset="100%" stop-color="#27272a"/>
     </linearGradient>
     <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
   </defs>
 
-  <rect width="900" height="220" rx="14" fill="url(#bg)"/>
-  <rect x="1" y="1" width="898" height="218" rx="13" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
+  <rect width="900" height="260" rx="16" fill="url(#grid)"/>
+  <rect x="1" y="1" width="898" height="258" rx="15" stroke="url(#borderGrad)" stroke-width="1.5"/>
 
+  <!-- Top Telemetry Header -->
   <circle cx="36" cy="36" r="4.5" fill="#10b981">
-    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
-  <text x="50" y="40" fill="#a1a1aa" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="2">DESKSPACE TECHNOLOGIES PVT. LTD. // OFFICE OF THE CHAIRMAN</text>
-  <text x="864" y="40" text-anchor="end" fill="#71717a" font-family="monospace" font-size="11">EST. 2018 • HYDERABAD, IN</text>
-  <line x1="28" y1="56" x2="872" y2="56" stroke="#27272a" stroke-width="1"/>
+  <circle cx="36" cy="36" r="10" stroke="#10b981" stroke-width="1" fill="none">
+    <animate attributeName="r" values="4.5;14" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="56" y="40" fill="#a1a1aa" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="2">DESKSPACE TECHNOLOGIES PVT. LTD. // EXECUTIVE COMMAND</text>
+  <text x="864" y="40" text-anchor="end" fill="#71717a" font-family="monospace" font-size="11">NODE: 2018–2026 • HYDERABAD, IN</text>
+  <line x1="28" y1="58" x2="872" y2="58" stroke="#27272a" stroke-width="1"/>
 
-  <text x="450" y="108" text-anchor="middle" fill="#fafafa" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" letter-spacing="6">SHASHWAJEN AKINAPELLY</text>
+  <!-- Executive Identity -->
+  <text x="450" y="112" text-anchor="middle" fill="#fafafa" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" letter-spacing="7">SHASHWAJEN AKINAPELLY</text>
+  <text x="450" y="142" text-anchor="middle" fill="#a1a1aa" font-family="monospace" font-size="13" letter-spacing="3">FOUNDER &amp; CHAIRMAN  •  PRINCIPAL AI &amp; SYSTEMS ARCHITECT</text>
 
-  <text x="450" y="138" text-anchor="middle" fill="#a1a1aa" font-family="monospace" font-size="13" letter-spacing="2.5">FOUNDER &amp; CHAIRMAN  •  AI INFRASTRUCTURE &amp; SYSTEMS ARCHITECTURE</text>
+  <!-- 3 Live Hardware/System Pills -->
+  <rect x="80" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
+  <text x="195" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">AI INFRASTRUCTURE</text>
 
-  <rect x="140" y="160" width="620" height="34" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-  <text x="442" y="181" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="12" letter-spacing="1">&gt; AUTONOMOUS AGENTS  •  LOCAL LLM RUNTIMES  •  ENTERPRISE SYSTEMS</text>
-  <rect x="698" y="170" width="7" height="14" fill="#fafafa">
+  <rect x="335" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
+  <text x="450" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">AUTONOMOUS AGENTS</text>
+
+  <rect x="590" y="164" width="230" height="32" rx="6" fill="#121216" stroke="#27272a"/>
+  <text x="705" y="184" text-anchor="middle" fill="#e4e4e7" font-family="monospace" font-size="11" letter-spacing="1">SYSTEMS ARCHITECTURE</text>
+
+  <!-- Bottom Active Console Line -->
+  <text x="442" y="232" text-anchor="middle" fill="#71717a" font-family="monospace" font-size="11" letter-spacing="1.5">STATUS: OPERATIONAL  |  CLEARANCE: CHAIRMAN  |  UPTIME: 99.99%</text>
+  <rect x="692" y="221" width="6" height="13" fill="#10b981">
     <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
   </rect>
 
+  <!-- Top & Bottom Laser Sweeps -->
   <rect x="-300" y="0" width="300" height="2" fill="url(#beam)">
-    <animate attributeName="x" from="-300" to="900" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" from="-300" to="900" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="900" y="258" width="300" height="2" fill="url(#beam)">
+    <animate attributeName="x" from="900" to="-300" dur="3.5s" repeatCount="indefinite"/>
   </rect>
 </svg>
