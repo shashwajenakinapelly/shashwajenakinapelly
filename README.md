@@ -1,31 +1,26 @@
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Executive Command" />
+<img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Founder & Chairman" />
 
 </div>
 
 <br>
 
----
-
 ### I. Office of the Chairman — Executive Mandate
 
-> **Shashwajen Akinapelly** is the **Founder & Chairman of Deskspace Technologies Pvt. Ltd.**, directing corporate strategy, applied artificial intelligence research, and foundational software systems. With an engineering track record spanning eight years, his work centers on building deterministic multi-agent platforms, hardware-accelerated local inference runtimes, and resilient enterprise infrastructure.
+<div align="center">
 
-| Corporate Governance & Venture Leadership | Systems & Technical Architecture |
-| :--- | :--- |
-| **Deskspace Technologies Pvt. Ltd.** — *Founder & Chairman*<br>Directing company vision, R&D roadmap, intellectual property, and commercial software delivery. | **Applied AI & Autonomous Workflows**<br>Multimodal enterprise document ingestion, `pgvector` semantic indexing, and deterministic agent orchestration. |
-| **Product & Engineering Divisions**<br>Leading end-to-end execution across cloud-native platforms, native Android applications, and Linux environments. | **Low-Level Runtime & OS Engineering**<br>Custom Linux desktop compositors, kernel parameter tuning, local LLM clusters, and native `Kotlin` / `Jetpack Compose` systems. |
+<img src="./mandate.svg" width="100%" alt="Executive Mandate" />
 
----
+</div>
+
+<br>
 
 ### II. Verified Engineering Velocity & Live Telemetry
 
 <div align="center">
 
-<br>
-
-<img src="https://streak-stats.demolab.com?user=coderwrexx&theme=dark&hide_border=true&background=09090B&stroke=27272A&ring=FAFAFA&fire=FAFAFA&currStreakLabel=FAFAFA&sideLabels=A1A1AA&dates=71717A" width="76%" alt="Contribution Streak" />
+<img src="https://streak-stats.demolab.com?user=coderwrexx&theme=dark&hide_border=true&background=050507&stroke=27272A&ring=EAB308&fire=10B981&currStreakLabel=FAFAFA&sideLabels=A1A1AA&dates=71717A" width="78%" alt="Contribution Streak" />
 
 <br><br>
 
@@ -35,13 +30,9 @@
 
 <br>
 
----
-
 ### III. Flagship Ventures & Corporate Track Record
 
 <div align="center">
-
-<br>
 
 <a href="https://github.com/deckspaces">
   <img src="./showcase.svg" width="100%" alt="Deskspace Technologies Flagship Ventures" />
@@ -51,7 +42,7 @@
 
 <br>
 
-| Period | Initiative / Entity | Sector | Architectural Outcome |
+| Period | Initiative / Entity | Sector | Architectural Deliverable |
 | :--- | :--- | :--- | :--- |
 | **2026** | **[Deskspace Technologies Pvt. Ltd.](https://github.com/deckspaces)** | Enterprise Software | Founded and structured flagship technology holding and software engineering firm. |
 | **2026** | **OmniDoc AI** | Enterprise AI | Built multimodal document workflow agent utilizing `Gemini API`, `Cloud Run`, and `pgvector`. |
@@ -61,7 +52,7 @@
 | **2018–2025** | **Systems & Web R&D** | Infrastructure | 8-year engineering foundation across Linux kernel environments, Android internals, and full-stack web. |
 
 <details>
-<summary><b>▸ Inspect Deep Architecture Blueprints (Click to Expand)</b></summary>
+<summary><b>▸ Inspect Deep Architecture Blueprints (Interactive Technical Specification)</b></summary>
 <br>
 
 * **OmniDoc AI Pipeline:** Ingests multi-page PDFs and scanned records, generates dense vector embeddings in PostgreSQL (`pgvector`), and executes multi-step reasoning via Gemini API on serverless Google Cloud Run instances.
@@ -70,13 +61,11 @@
 
 </details>
 
----
+<br>
 
 ### IV. Distinctions, Credentials & Recognitions
 
 <div align="center">
-
-<br>
 
 <img src="./credentials.svg" width="100%" alt="Verified Distinctions & Credentials" />
 
@@ -84,29 +73,20 @@
 
 <br>
 
----
-
 ### V. Production Architecture Topology
 
 <div align="center">
 
-<br>
-
 <img src="./architecture.svg" width="100%" alt="Deskspace Technologies Production Architecture" />
 
-</div>
+<br><br>
+
+<a href="https://github.com/shashwajenakinapelly">
+  <img src="./footer.svg" width="100%" alt="Deskspace Technologies Executive Footer" />
+</a>
 
 <br>
 
----
-
-<div align="center">
-
-**DESKSPACE TECHNOLOGIES PVT. LTD.** &nbsp;•&nbsp; HYDERABAD, INDIA
-
-[![Executive Node](https://img.shields.io/badge/EXECUTIVE-shashwajenakinapelly-09090b?style=flat-square&labelColor=27272a)](https://github.com/shashwajenakinapelly)
-[![Engineering Node](https://img.shields.io/badge/ENGINEERING-coderwrexx-09090b?style=flat-square&labelColor=27272a)](https://github.com/coderwrexx)
-[![Organization](https://img.shields.io/badge/VENTURE-deckspaces-09090b?style=flat-square&labelColor=27272a)](https://github.com/deckspaces)
-![Profile Views](https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=09090b&label=VIEWS)
+<img src="https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=050507&label=EXECUTIVE+BRIEFING+VIEWS" alt="Profile Views" />
 
 </div>
