@@ -1,4 +1,4 @@
-name: Generate Live Contribution Snake
+name: Generate Framed Contribution Snake
 
 on:
   schedule:
@@ -18,9 +18,48 @@ jobs:
         with:
           github_user_name: coderwrexx
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#eab308&color_dots=#161b22,#0e4429,#006d32,#26a641,#10b981
+            dist/raw-snake.svg?palette=github-dark&color_snake=#eab308&color_dots=#141419,#064e3b,#047857,#059669,#10b981
 
-      - name: Push SVG to Repository
+      - name: Wrap Snake in Obsidian Executive Frame
+        run: |
+          INNER_SVG=$(sed -e 's/<svg[^>]*>//g' -e 's/<\/svg>//g' dist/raw-snake.svg)
+          cat << 'EOF' > dist/framed-snake.svg
+          <svg width="900" height="265" viewBox="0 0 900 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&amp;display=swap');
+                .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+                @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+                .live-dot { animation: pulse 2s ease-in-out infinite; }
+              </style>
+              <linearGradient id="snakeCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#050507"/>
+                <stop offset="100%" stop-color="#0d0d12"/>
+              </linearGradient>
+              <linearGradient id="snakeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#27272a"/>
+                <stop offset="50%" stop-color="#eab308" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#27272a"/>
+              </linearGradient>
+            </defs>
+
+            <rect width="900" height="265" rx="16" fill="url(#snakeCardBg)" stroke="url(#snakeBorder)" stroke-width="1.5"/>
+
+            <circle cx="36" cy="34" r="4.5" fill="#10b981" class="live-dot"/>
+            <text x="52" y="38" fill="#fafafa" class="mono" font-size="11.5" font-weight="700" letter-spacing="2">52-WEEK CONTRIBUTION MATRIX // AUTONOMOUS EXECUTION TRACE</text>
+            <text x="866" y="38" text-anchor="end" fill="#eab308" class="mono" font-size="11" font-weight="700">● 326-DAY ACTIVE STREAK</text>
+            <line x1="28" y1="54" x2="872" y2="54" stroke="#27272a" stroke-width="1"/>
+
+            <g transform="translate(22, 66) scale(0.97)">
+          EOF
+          echo "$INNER_SVG" >> dist/framed-snake.svg
+          cat << 'EOF' >> dist/framed-snake.svg
+            </g>
+          </svg>
+          EOF
+          rm dist/raw-snake.svg
+
+      - name: Deploy Framed Snake to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
