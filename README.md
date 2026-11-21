@@ -37,7 +37,7 @@
   <br><br>
   <img src="./telemetry.svg" width="100%" alt="Live Systems & Language Telemetry" />
   <br><br>
-  <img src="https://raw.githubusercontent.com/shashwajenakinapelly/shashwajenakinapelly/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Live Contribution Grid" />
+  <img src="https://raw.githubusercontent.com/shashwajenakinapelly/shashwajenakinapelly/output/framed-snake.svg" width="100%" alt="Framed Contribution Grid" />
 </div>
 
 <br>
