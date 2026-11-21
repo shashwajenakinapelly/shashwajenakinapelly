@@ -1,4 +1,4 @@
-name: Generate Framed Contribution Snake
+name: Build Executive Contribution Matrix
 
 on:
   schedule:
@@ -9,61 +9,107 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build-snake:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Generate Contribution Snake SVG
+      - name: Checkout Main Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Raw Contribution Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: coderwrexx
           outputs: |
             dist/raw-snake.svg?palette=github-dark&color_snake=#eab308&color_dots=#141419,#064e3b,#047857,#059669,#10b981
 
-      - name: Wrap Snake in Obsidian Executive Frame
+      - name: Compile Luxury Obsidian & Gold Executive Frame
         run: |
-          INNER_SVG=$(sed -e 's/<svg[^>]*>//g' -e 's/<\/svg>//g' dist/raw-snake.svg)
-          cat << 'EOF' > dist/framed-snake.svg
-          <svg width="900" height="265" viewBox="0 0 900 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+          python3 - << 'EOF'
+          import re
+
+          with open("dist/raw-snake.svg", "r", encoding="utf-8") as f:
+              raw = f.read()
+
+          # Extract viewBox and inner content cleanly without breaking nested defs/styles
+          vb_match = re.search(r'viewBox="([^"]+)"', raw)
+          viewbox = vb_match.group(1) if vb_match else "-16 -32 880 192"
+          inner = re.sub(r'^[\s\S]*?<svg[^>]*>', '', raw, count=1)
+          inner = re.sub(r'</svg>\s*$', '', inner)
+
+          framed = f'''<svg width="900" height="295" viewBox="0 0 900 295" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <style>
-                @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&amp;display=swap');
-                .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
-                @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
-                .live-dot { animation: pulse 2s ease-in-out infinite; }
+                @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&amp;family=Plus+Jakarta+Sans:wght@600;800&amp;display=swap');
+                .exec-mono {{ font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; }}
+                .exec-sans {{ font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }}
+                @keyframes pulseBeacon {{ 0% {{ r: 4.5; opacity: 0.9; }} 100% {{ r: 14; opacity: 0; }} }}
+                @keyframes sweepLine {{ 0% {{ transform: translateX(-300px); }} 100% {{ transform: translateX(900px); }} }}
+                .beacon-ring {{ animation: pulseBeacon 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite; }}
+                .laser-line {{ animation: sweepLine 4.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }}
               </style>
-              <linearGradient id="snakeCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#050507"/>
-                <stop offset="100%" stop-color="#0d0d12"/>
+              <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#040406"/>
+                <stop offset="50%" stop-color="#0b0b10"/>
+                <stop offset="100%" stop-color="#040406"/>
               </linearGradient>
-              <linearGradient id="snakeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id="goldEmeraldBorder" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stop-color="#27272a"/>
-                <stop offset="50%" stop-color="#eab308" stop-opacity="0.45"/>
+                <stop offset="35%" stop-color="#eab308" stop-opacity="0.6"/>
+                <stop offset="65%" stop-color="#10b981" stop-opacity="0.6"/>
                 <stop offset="100%" stop-color="#27272a"/>
               </linearGradient>
+              <linearGradient id="topSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#eab308" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#fafafa" stop-opacity="0.75"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+              </linearGradient>
+              <pattern id="subGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+                <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+              </pattern>
             </defs>
 
-            <rect width="900" height="265" rx="16" fill="url(#snakeCardBg)" stroke="url(#snakeBorder)" stroke-width="1.5"/>
+            <!-- Deep Obsidian Base & Subtle Grid -->
+            <rect width="900" height="295" rx="16" fill="url(#matrixBg)"/>
+            <rect width="900" height="295" rx="16" fill="url(#subGrid)"/>
+            <rect x="1" y="1" width="898" height="293" rx="15" stroke="url(#goldEmeraldBorder)" stroke-width="1.5"/>
 
-            <circle cx="36" cy="34" r="4.5" fill="#10b981" class="live-dot"/>
-            <text x="52" y="38" fill="#fafafa" class="mono" font-size="11.5" font-weight="700" letter-spacing="2">52-WEEK CONTRIBUTION MATRIX // AUTONOMOUS EXECUTION TRACE</text>
-            <text x="866" y="38" text-anchor="end" fill="#eab308" class="mono" font-size="11" font-weight="700">● 326-DAY ACTIVE STREAK</text>
-            <line x1="28" y1="54" x2="872" y2="54" stroke="#27272a" stroke-width="1"/>
+            <!-- Header Telemetry Bar -->
+            <circle cx="36" cy="36" r="4.5" fill="#10b981"/>
+            <circle cx="36" cy="36" r="4.5" stroke="#10b981" stroke-width="1.2" fill="none" class="beacon-ring"/>
+            <text x="54" y="40" fill="#fafafa" class="exec-mono" font-size="11.5" font-weight="800" letter-spacing="2">52-WEEK CONTRIBUTION MATRIX // AUTONOMOUS EXECUTION TRACE</text>
+            <text x="866" y="40" text-anchor="end" fill="#eab308" class="exec-mono" font-size="11" font-weight="700" letter-spacing="1">★ 326-DAY ACTIVE STREAK</text>
+            <line x1="28" y1="56" x2="872" y2="56" stroke="#27272a" stroke-width="1"/>
 
-            <g transform="translate(22, 66) scale(0.97)">
+            <!-- Embedded Nested SVG Preserving Exact ViewBox & Keyframes -->
+            <svg x="24" y="64" width="852" height="184" viewBox="{viewbox}">
+              {inner}
+            </svg>
+
+            <!-- Bottom Telemetry Legend Bar -->
+            <line x1="28" y1="254" x2="872" y2="254" stroke="#27272a" stroke-width="1"/>
+            <text x="32" y="276" fill="#71717a" class="exec-mono" font-size="10" letter-spacing="1.5">SOURCE: GITHUB GRAPH TELEMETRY  •  1,866+ VERIFIED COMMITS</text>
+            <rect x="650" y="268" width="10" height="10" rx="2" fill="#141419" stroke="#27272a"/>
+            <rect x="666" y="268" width="10" height="10" rx="2" fill="#064e3b"/>
+            <rect x="682" y="268" width="10" height="10" rx="2" fill="#047857"/>
+            <rect x="698" y="268" width="10" height="10" rx="2" fill="#059669"/>
+            <rect x="714" y="268" width="10" height="10" rx="2" fill="#10b981"/>
+            <circle cx="744" cy="273" r="4.5" fill="#eab308"/>
+            <text x="756" y="276" fill="#a1a1aa" class="exec-mono" font-size="10" font-weight="700">ACTIVE AGENT</text>
+
+            <!-- Top Laser Sweep -->
+            <rect x="0" y="0" width="300" height="2" fill="url(#topSweep)" class="laser-line"/>
+          </svg>'''
+
+          with open("framed-snake.svg", "w", encoding="utf-8") as f:
+              f.write(framed)
           EOF
-          echo "$INNER_SVG" >> dist/framed-snake.svg
-          cat << 'EOF' >> dist/framed-snake.svg
-            </g>
-          </svg>
-          EOF
-          rm dist/raw-snake.svg
 
-      - name: Deploy Framed Snake to Output Branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit Framed SVG Directly to Main Branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add framed-snake.svg
+          git diff --staged --quiet || git commit -m "chore: update framed contribution matrix"
+          git push
           
