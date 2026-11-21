@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Founder & Chairman" />
+<img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Executive Command" />
 
 <br><br>
 
@@ -26,7 +26,7 @@
 
 ---
 
-### II. Verified Engineering Velocity & Codebase Audit
+### II. Verified Engineering Velocity & Live Telemetry
 
 <div align="center">
 
@@ -36,12 +36,7 @@
 
 <br><br>
 
-![Shell](https://img.shields.io/badge/Shell_%26_Systems-36.2%25-09090b?style=for-the-badge&logo=gnubash&logoColor=fafafa&labelColor=18181b)
-![Python](https://img.shields.io/badge/Python_%26_AI-26.4%25-09090b?style=for-the-badge&logo=python&logoColor=fafafa&labelColor=18181b)
-![TypeScript](https://img.shields.io/badge/TypeScript_%26_React-18.9%25-09090b?style=for-the-badge&logo=typescript&logoColor=fafafa&labelColor=18181b)
-![Kotlin](https://img.shields.io/badge/Kotlin_%26_Android-9.1%25-09090b?style=for-the-badge&logo=kotlin&logoColor=fafafa&labelColor=18181b)
-![CPP](https://img.shields.io/badge/C%2B%2B_%26_Runtime-5.4%25-09090b?style=for-the-badge&logo=cplusplus&logoColor=fafafa&labelColor=18181b)
-![SQL](https://img.shields.io/badge/SQL_%26_pgvector-4.0%25-09090b?style=for-the-badge&logo=postgresql&logoColor=fafafa&labelColor=18181b)
+<img src="./telemetry.svg" width="100%" alt="Live Systems & Language Telemetry" />
 
 </div>
 
@@ -61,7 +56,7 @@
 | **2018–2025** | **Systems & Web R&D** | Infrastructure | 8-year engineering foundation across Linux kernel environments, Android internals, and full-stack web. |
 
 <details>
-<summary><b>▸ Inspect Deep Architecture Blueprints (Interactive Specification)</b></summary>
+<summary><b>▸ Inspect Deep Architecture Blueprints (Click to Expand)</b></summary>
 <br>
 
 * **OmniDoc AI Pipeline:** Ingests multi-page PDFs and scanned records, generates dense vector embeddings in PostgreSQL (`pgvector`), and executes multi-step reasoning via Gemini API on serverless Google Cloud Run instances.
