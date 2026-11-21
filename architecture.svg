@@ -1,0 +1,67 @@
+<svg width="900" height="270" viewBox="0 0 900 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050507"/>
+      <stop offset="100%" stop-color="#0e0e13"/>
+    </linearGradient>
+    <linearGradient id="nodeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="270" rx="16" fill="url(#archBg)"/>
+  <rect width="900" height="270" rx="16" fill="url(#dots)"/>
+  <rect x="1" y="1" width="898" height="268" rx="15" stroke="#27272a" stroke-width="1.5"/>
+
+  <text x="32" y="36" fill="#fafafa" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="2">DESKSPACE TECHNOLOGIES // PRODUCTION ARCHITECTURE TOPOLOGY</text>
+  <text x="868" y="36" text-anchor="end" fill="#10b981" font-family="monospace" font-size="11">● MESH ACTIVE</text>
+  <line x1="32" y1="52" x2="868" y2="52" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Connecting Data Buses -->
+  <line x1="292" y1="145" x2="338" y2="145" stroke="#3f3f46" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="562" y1="145" x2="608" y2="145" stroke="#3f3f46" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Animated Signal Pulses Traveling Between Nodes -->
+  <circle cx="292" cy="145" r="3.5" fill="#10b981">
+    <animate attributeName="cx" values="292;338" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="562" cy="145" r="3.5" fill="#fafafa">
+    <animate attributeName="cx" values="562;608" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Node 1: AI & Cognitive Layer -->
+  <rect x="32" y="74" width="260" height="164" rx="12" fill="#09090b" stroke="url(#nodeBorder)" stroke-width="1.5"/>
+  <rect x="32" y="74" width="260" height="32" rx="12" fill="#18181b"/>
+  <text x="48" y="94" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold">01 // COGNITIVE &amp; AI LAYER</text>
+  <text x="48" y="126" fill="#fafafa" font-family="monospace" font-size="12" font-weight="bold">Multimodal Agent Engine</text>
+  <text x="48" y="146" fill="#a1a1aa" font-family="monospace" font-size="11">• Gemini API &amp; RAG Pipelines</text>
+  <text x="48" y="166" fill="#a1a1aa" font-family="monospace" font-size="11">• PostgreSQL + pgvector</text>
+  <text x="48" y="186" fill="#a1a1aa" font-family="monospace" font-size="11">• llama.cpp / Ollama / Goose</text>
+  <text x="48" y="218" fill="#71717a" font-family="monospace" font-size="10">LATENCY: SUB-SECOND</text>
+
+  <!-- Node 2: Systems & Low-Level Runtime -->
+  <rect x="338" y="74" width="224" height="164" rx="12" fill="#09090b" stroke="url(#nodeBorder)" stroke-width="1.5"/>
+  <rect x="338" y="74" width="224" height="32" rx="12" fill="#18181b"/>
+  <text x="354" y="94" fill="#fafafa" font-family="monospace" font-size="11" font-weight="bold">02 // CORE RUNTIME</text>
+  <text x="354" y="126" fill="#fafafa" font-family="monospace" font-size="12" font-weight="bold">OS &amp; Systems Kernel</text>
+  <text x="354" y="146" fill="#a1a1aa" font-family="monospace" font-size="11">• Ubuntu Linux Internals</text>
+  <text x="354" y="166" fill="#a1a1aa" font-family="monospace" font-size="11">• C++26 &amp; Vulkan Compute</text>
+  <text x="354" y="186" fill="#a1a1aa" font-family="monospace" font-size="11">• Bash &amp; ADB Telemetry</text>
+  <text x="354" y="218" fill="#71717a" font-family="monospace" font-size="10">INTEGRITY: HARDENED</text>
+
+  <!-- Node 3: Enterprise & Client Delivery -->
+  <rect x="608" y="74" width="260" height="164" rx="12" fill="#09090b" stroke="url(#nodeBorder)" stroke-width="1.5"/>
+  <rect x="608" y="74" width="260" height="32" rx="12" fill="#18181b"/>
+  <text x="624" y="94" fill="#a1a1aa" font-family="monospace" font-size="11" font-weight="bold">03 // CLOUD &amp; CLIENT</text>
+  <text x="624" y="126" fill="#fafafa" font-family="monospace" font-size="12" font-weight="bold">Full-Stack &amp; Native UI</text>
+  <text x="624" y="146" fill="#a1a1aa" font-family="monospace" font-size="11">• TypeScript / React / Next.js</text>
+  <text x="624" y="166" fill="#a1a1aa" font-family="monospace" font-size="11">• Kotlin &amp; Jetpack Compose</text>
+  <text x="624" y="186" fill="#a1a1aa" font-family="monospace" font-size="11">• Cloud Run / Docker / Vercel</text>
+  <text x="624" y="218" fill="#71717a" font-family="monospace" font-size="10">AVAILABILITY: GLOBAL EDGE</text>
+</svg>
