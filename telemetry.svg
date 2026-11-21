@@ -1,0 +1,79 @@
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#111115"/>
+    </linearGradient>
+    <linearGradient id="barFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#52525b"/>
+      <stop offset="100%" stop-color="#fafafa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="240" rx="14" fill="url(#cardBg)" stroke="#27272a" stroke-width="1.5"/>
+
+  <text x="32" y="36" fill="#fafafa" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="2">SYSTEMS &amp; LANGUAGE TELEMETRY // VERIFIED DISTRIBUTION</text>
+  <text x="868" y="36" text-anchor="end" fill="#10b981" font-family="monospace" font-size="11">● LIVE SYNC</text>
+  <line x1="32" y1="50" x2="868" y2="50" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Left Column: Languages -->
+  <text x="32" y="78" fill="#e4e4e7" font-family="monospace" font-size="12">SHELL &amp; LINUX INTERNALS</text>
+  <text x="420" y="78" text-anchor="end" fill="#a1a1aa" font-family="monospace" font-size="12">36.2%</text>
+  <rect x="32" y="86" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="32" y="86" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="290" dur="1.4s" fill="freeze"/>
+  </rect>
+
+  <text x="32" y="122" fill="#e4e4e7" font-family="monospace" font-size="12">PYTHON &amp; MULTIMODAL AI</text>
+  <text x="420" y="122" text-anchor="end" fill="#a1a1aa" font-family="monospace" font-size="12">26.4%</text>
+  <rect x="32" y="130" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="32" y="130" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="225" dur="1.6s" fill="freeze"/>
+  </rect>
+
+  <text x="32" y="166" fill="#e4e4e7" font-family="monospace" font-size="12">TYPESCRIPT &amp; REACT / NEXT.JS</text>
+  <text x="420" y="166" text-anchor="end" fill="#a1a1aa" font-family="monospace" font-size="12">18.9%</text>
+  <rect x="32" y="174" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="32" y="174" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="170" dur="1.8s" fill="freeze"/>
+  </rect>
+
+  <text x="32" y="206" fill="#e4e4e7" font-family="monospace" font-size="12">KOTLIN • C++ • SQL / PGVECTOR</text>
+  <text x="420" y="206" text-anchor="end" fill="#a1a1aa" font-family="monospace" font-size="12">18.5%</text>
+  <rect x="32" y="214" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="32" y="214" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="165" dur="2.0s" fill="freeze"/>
+  </rect>
+
+  <!-- Center Divider -->
+  <line x1="450" y1="68" x2="450" y2="220" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Right Column: Architectural Benchmarks -->
+  <text x="480" y="78" fill="#e4e4e7" font-family="monospace" font-size="12">MULTI-AGENT ORCHESTRATION</text>
+  <text x="868" y="78" text-anchor="end" fill="#10b981" font-family="monospace" font-size="12">PRODUCTION</text>
+  <rect x="480" y="86" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="480" y="86" width="0" height="6" rx="3" fill="#10b981">
+    <animate attributeName="width" from="0" to="388" dur="1.5s" fill="freeze"/>
+  </rect>
+
+  <text x="480" y="122" fill="#e4e4e7" font-family="monospace" font-size="12">LOCAL LLM INFERENCE (VULKAN)</text>
+  <text x="868" y="122" text-anchor="end" fill="#fafafa" font-family="monospace" font-size="12">VERIFIED</text>
+  <rect x="480" y="130" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="480" y="130" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="360" dur="1.7s" fill="freeze"/>
+  </rect>
+
+  <text x="480" y="166" fill="#e4e4e7" font-family="monospace" font-size="12">CLOUD RUN &amp; EDGE DEPLOYMENT</text>
+  <text x="868" y="166" text-anchor="end" fill="#fafafa" font-family="monospace" font-size="12">VERIFIED</text>
+  <rect x="480" y="174" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="480" y="174" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="345" dur="1.9s" fill="freeze"/>
+  </rect>
+
+  <text x="480" y="206" fill="#e4e4e7" font-family="monospace" font-size="12">ANDROID COMPOSITOR &amp; OS TUNING</text>
+  <text x="868" y="206" text-anchor="end" fill="#fafafa" font-family="monospace" font-size="12">VERIFIED</text>
+  <rect x="480" y="214" width="388" height="6" rx="3" fill="#18181b"/>
+  <rect x="480" y="214" width="0" height="6" rx="3" fill="url(#barFill)">
+    <animate attributeName="width" from="0" to="335" dur="2.1s" fill="freeze"/>
+  </rect>
+</svg>
