@@ -2,42 +2,55 @@
 
 <img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Founder & Chairman" />
 
-</div>
-
 <br>
 
-### I. Office of the Chairman — Executive Mandate
-
-<div align="center">
-
-<img src="./mandate.svg" width="100%" alt="Executive Mandate" />
-
-</div>
-
-<br>
-
-### II. Verified Engineering Velocity & Live Telemetry
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=coderwrexx&theme=dark&hide_border=true&background=050507&stroke=27272A&ring=EAB308&fire=10B981&currStreakLabel=FAFAFA&sideLabels=A1A1AA&dates=71717A" width="78%" alt="Contribution Streak" />
-
-<br><br>
-
-<img src="./telemetry.svg" width="100%" alt="Live Systems & Language Telemetry" />
+<sub>
+  <a href="#i-executive-mandate"><b>01. EXECUTIVE MANDATE</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#ii-live-telemetry"><b>02. LIVE TELEMETRY</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#iii-ventures--track-record"><b>03. VENTURES &amp; TRACK RECORD</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#iv-distinctions"><b>04. DISTINCTIONS</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#v-architecture"><b>05. ARCHITECTURE</b></a>
+</sub>
 
 </div>
 
 <br>
 
-### III. Flagship Ventures & Corporate Track Record
+---
 
+<a name="i-executive-mandate"></a>
 <div align="center">
+  <sub><b>I. OFFICE OF THE CHAIRMAN — EXECUTIVE MANDATE</b></sub>
+  <br><br>
+  <img src="./mandate.svg" width="100%" alt="Executive Mandate" />
+</div>
 
-<a href="https://github.com/deckspaces">
-  <img src="./showcase.svg" width="100%" alt="Deskspace Technologies Flagship Ventures" />
-</a>
+<br>
 
+---
+
+<a name="ii-live-telemetry"></a>
+<div align="center">
+  <sub><b>II. VERIFIED ENGINEERING VELOCITY &amp; LIVE TELEMETRY</b></sub>
+  <br><br>
+  <img src="https://streak-stats.demolab.com?user=coderwrexx&theme=dark&hide_border=true&background=050507&stroke=27272A&ring=EAB308&fire=10B981&currStreakLabel=FAFAFA&sideLabels=A1A1AA&dates=71717A" width="78%" alt="Contribution Streak" />
+  <br><br>
+  <img src="./telemetry.svg" width="100%" alt="Live Systems & Language Telemetry" />
+  <br><br>
+  <img src="https://raw.githubusercontent.com/shashwajenakinapelly/shashwajenakinapelly/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Live Contribution Grid" />
+</div>
+
+<br>
+
+---
+
+<a name="iii-ventures--track-record"></a>
+<div align="center">
+  <sub><b>III. FLAGSHIP VENTURES &amp; CORPORATE TRACK RECORD</b></sub>
+  <br><br>
+  <a href="https://github.com/deckspaces">
+    <img src="./showcase.svg" width="100%" alt="Deskspace Technologies Flagship Ventures" />
+  </a>
 </div>
 
 <br>
@@ -63,30 +76,28 @@
 
 <br>
 
-### IV. Distinctions, Credentials & Recognitions
+---
 
+<a name="iv-distinctions"></a>
 <div align="center">
-
-<img src="./credentials.svg" width="100%" alt="Verified Distinctions & Credentials" />
-
+  <sub><b>IV. DISTINCTIONS, CREDENTIALS &amp; RECOGNITIONS</b></sub>
+  <br><br>
+  <img src="./credentials.svg" width="100%" alt="Verified Distinctions & Credentials" />
 </div>
 
 <br>
 
-### V. Production Architecture Topology
+---
 
+<a name="v-architecture"></a>
 <div align="center">
-
-<img src="./architecture.svg" width="100%" alt="Deskspace Technologies Production Architecture" />
-
-<br><br>
-
-<a href="https://github.com/shashwajenakinapelly">
-  <img src="./footer.svg" width="100%" alt="Deskspace Technologies Executive Footer" />
-</a>
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=050507&label=EXECUTIVE+BRIEFING+VIEWS" alt="Profile Views" />
-
+  <sub><b>V. PRODUCTION ARCHITECTURE TOPOLOGY</b></sub>
+  <br><br>
+  <img src="./architecture.svg" width="100%" alt="Deskspace Technologies Production Architecture" />
+  <br><br>
+  <a href="https://github.com/shashwajenakinapelly">
+    <img src="./footer.svg" width="100%" alt="Deskspace Technologies Executive Footer" />
+  </a>
+  <br>
+  <img src="https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=050507&label=EXECUTIVE+BRIEFING+VIEWS" alt="Profile Views" />
 </div>
