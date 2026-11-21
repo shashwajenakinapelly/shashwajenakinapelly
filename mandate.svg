@@ -1,0 +1,34 @@
+<svg width="900" height="245" viewBox="0 0 900 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap');
+      .sans { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050507"/>
+      <stop offset="100%" stop-color="#0d0d12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="245" rx="16" fill="url(#mBg)" stroke="#27272a" stroke-width="1.5"/>
+
+  <!-- Left Accent Bar -->
+  <rect x="28" y="26" width="3" height="58" rx="1.5" fill="#eab308"/>
+  <text x="44" y="42" fill="#fafafa" class="sans" font-size="14" font-weight="700">Shashwajen Akinapelly directs corporate strategy, applied AI research, and core software systems</text>
+  <text x="44" y="62" fill="#a1a1aa" class="sans" font-size="13">as Founder &amp; Chairman of Deskspace Technologies Pvt. Ltd. — translating multi-agent orchestration,</text>
+  <text x="44" y="80" fill="#a1a1aa" class="sans" font-size="13">local inference runtimes, and systems engineering into durable enterprise infrastructure.</text>
+
+  <!-- Two Glass Governance Cards -->
+  <rect x="28" y="104" width="412" height="116" rx="12" fill="#09090b" stroke="#27272a"/>
+  <text x="46" y="130" fill="#eab308" class="mono" font-size="11" font-weight="600" letter-spacing="1.5">01 // CORPORATE GOVERNANCE &amp; VENTURE</text>
+  <text x="46" y="154" fill="#fafafa" class="sans" font-size="14" font-weight="700">Deskspace Technologies Pvt. Ltd.</text>
+  <text x="46" y="175" fill="#a1a1aa" class="sans" font-size="12.5">• Executive R&amp;D roadmap, IP architecture &amp; venture scaling</text>
+  <text x="46" y="196" fill="#a1a1aa" class="sans" font-size="12.5">• Full-lifecycle product governance across cloud &amp; mobile</text>
+
+  <rect x="460" y="104" width="412" height="116" rx="12" fill="#09090b" stroke="#27272a"/>
+  <text x="478" y="130" fill="#10b981" class="mono" font-size="11" font-weight="600" letter-spacing="1.5">02 // SYSTEMS &amp; TECHNICAL MANDATE</text>
+  <text x="478" y="154" fill="#fafafa" class="sans" font-size="14" font-weight="700">Applied AI &amp; Low-Level Runtime Engineering</text>
+  <text x="478" y="175" fill="#a1a1aa" class="sans" font-size="12.5">• Multimodal ingestion, pgvector indexing &amp; agent pipelines</text>
+  <text x="478" y="196" fill="#a1a1aa" class="sans" font-size="12.5">• Linux kernel tuning, local LLM clusters &amp; native Kotlin UI</text>
+</svg>
