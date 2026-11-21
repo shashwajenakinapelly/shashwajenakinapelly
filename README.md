@@ -2,13 +2,6 @@
 
 <img src="./banner.svg" width="100%" alt="Shashwajen Akinapelly — Executive Command" />
 
-<br><br>
-
-![Role](https://img.shields.io/badge/ROLE-FOUNDER_%26_CHAIRMAN-09090b?style=for-the-badge&labelColor=27272a)
-![Venture](https://img.shields.io/badge/ENTITY-DESKSPACE_TECH_PVT._LTD.-09090b?style=for-the-badge&labelColor=27272a)
-![Streak](https://img.shields.io/badge/STREAK-326_DAYS_ACTIVE-09090b?style=for-the-badge&labelColor=27272a)
-![Commits](https://img.shields.io/badge/VELOCITY-1%2C866%2B_CONTRIBUTIONS-09090b?style=for-the-badge&labelColor=27272a)
-
 </div>
 
 <br>
@@ -69,38 +62,29 @@
 
 ### IV. Distinctions, Credentials & Recognitions
 
-| Year | Credential / Distinction | Issuing Body | Domain |
-| :--- | :--- | :--- | :--- |
-| **2026** | **Startup Buildathon India — Finalist Submission** | Hack2Skill | Multimodal Enterprise AI (`OmniDoc AI`) |
-| **2026** | **Generative & Agentic AI Micro-Specialisation** | NxtWave & IIT Kharagpur OCN | Autonomous Agent Systems (Shortlisted) |
-| **2026** | **Building Effective Human-Agent Teams** | Anthropic / Claude Academy | Multi-Agent Systems Architecture |
-| **2026** | **Claude 101 — Verified Certification** | Anthropic / Claude Academy | Applied LLM Engineering |
-
----
-
-### V. Core Technology Architecture
-
 <div align="center">
 
-![Linux](https://img.shields.io/badge/Ubuntu_Linux-09090b?style=for-the-badge&logo=ubuntu&logoColor=fafafa)
-![Python](https://img.shields.io/badge/Python-09090b?style=for-the-badge&logo=python&logoColor=fafafa)
-![TypeScript](https://img.shields.io/badge/TypeScript-09090b?style=for-the-badge&logo=typescript&logoColor=fafafa)
-![React](https://img.shields.io/badge/React_%26_Next.js-09090b?style=for-the-badge&logo=react&logoColor=fafafa)
-![Kotlin](https://img.shields.io/badge/Kotlin_%26_Compose-09090b?style=for-the-badge&logo=kotlin&logoColor=fafafa)
-![CPP](https://img.shields.io/badge/C%2B%2B_%26_Vulkan-09090b?style=for-the-badge&logo=cplusplus&logoColor=fafafa)
-![Docker](https://img.shields.io/badge/Docker_%26_Cloud_Run-09090b?style=for-the-badge&logo=docker&logoColor=fafafa)
-![Postgres](https://img.shields.io/badge/PostgreSQL_%26_pgvector-09090b?style=for-the-badge&logo=postgresql&logoColor=fafafa)
+<br>
+
+<img src="./credentials.svg" width="100%" alt="Verified Distinctions & Credentials" />
 
 </div>
 
 <br>
 
-| Architectural Layer | Capabilities & Production Tooling |
-| :--- | :--- |
-| **Executive & Venture Strategy** | Zero-to-One Product Architecture • Technical Governance • R&D Leadership • Commercial Scaling |
-| **Artificial Intelligence & Agents** | Multimodal Pipelines • RAG & `pgvector` • Local LLM Inference (`llama.cpp`, `Ollama`) • Gemini API |
-| **Systems & Mobile Engineering** | Ubuntu Linux Internals • Custom Compositors • `Kotlin` • `Jetpack Compose` • `C++` • `Bash` |
-| **Cloud & Full-Stack Infrastructure** | `TypeScript` • `React` • `Next.js` • `Python` • Docker • Google Cloud Run • PostgreSQL • Vercel |
+---
+
+### V. Production Architecture Topology
+
+<div align="center">
+
+<br>
+
+<img src="./architecture.svg" width="100%" alt="Deskspace Technologies Production Architecture" />
+
+</div>
+
+<br>
 
 ---
 
@@ -108,9 +92,9 @@
 
 **DESKSPACE TECHNOLOGIES PVT. LTD.** &nbsp;•&nbsp; HYDERABAD, INDIA
 
-[![Executive Node](https://img.shields.io/badge/EXECUTIVE_NODE-shashwajenakinapelly-09090b?style=flat-square&labelColor=27272a)](https://github.com/shashwajenakinapelly)
-[![Engineering Node](https://img.shields.io/badge/ENGINEERING_NODE-coderwrexx-09090b?style=flat-square&labelColor=27272a)](https://github.com/coderwrexx)
-[![Organization](https://img.shields.io/badge/ORGANIZATION-deckspaces-09090b?style=flat-square&labelColor=27272a)](https://github.com/deckspaces)
-![Profile Views](https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=09090b&label=BRIEFING+VIEWS)
+[![Executive Node](https://img.shields.io/badge/EXECUTIVE-shashwajenakinapelly-09090b?style=flat-square&labelColor=27272a)](https://github.com/shashwajenakinapelly)
+[![Engineering Node](https://img.shields.io/badge/ENGINEERING-coderwrexx-09090b?style=flat-square&labelColor=27272a)](https://github.com/coderwrexx)
+[![Organization](https://img.shields.io/badge/VENTURE-deckspaces-09090b?style=flat-square&labelColor=27272a)](https://github.com/deckspaces)
+![Profile Views](https://komarev.com/ghpvc/?username=shashwajenakinapelly&style=flat-square&color=09090b&label=VIEWS)
 
 </div>
