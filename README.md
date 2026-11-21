@@ -37,7 +37,19 @@
 
 ---
 
-### III. Corporate & Technical Track Record
+### III. Flagship Ventures & Corporate Track Record
+
+<div align="center">
+
+<br>
+
+<a href="https://github.com/deckspaces">
+  <img src="./showcase.svg" width="100%" alt="Deskspace Technologies Flagship Ventures" />
+</a>
+
+</div>
+
+<br>
 
 | Period | Initiative / Entity | Sector | Architectural Outcome |
 | :--- | :--- | :--- | :--- |
